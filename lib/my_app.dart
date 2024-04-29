@@ -11,10 +11,14 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
+    return MaterialApp(
       title: "Sunil Nayak",
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.system,
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+      ),
       darkTheme: ThemeData(brightness: Brightness.dark),
       home: const Resume(),
     );
